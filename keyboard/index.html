@@ -6,78 +6,81 @@
         <div class="frame">
             <section class="keyboard">
                 <div class="row">
-                    <p class="button size-1">`</p>
-                    <p class="button size-1">&#33; 1</p>
-                    <p class="button size-1">" 2</p>
-                    <p class="button size-1">3</p>
-                    <p class="button size-1">&#36; 4</p>
-                    <p class="button size-1">% 5</p>
-                    <p class="button size-1">&#94; 6</p>
-                    <p class="button size-1">&amp; 7</p>
-                    <p class="button size-1">* 8</p>
-                    <p class="button size-1">( 9</p>
-                    <p class="button size-1">) 0</p>
-                    <p class="button size-1">_ -</p>
-                    <p class="button size-1">+ =</p>
-                    <p class="button size-2">BS</p>
+                    <p class="button size-1 bug" id="num-firstkey">`</p>
+                    <p class="button size-1" id="num-1">&#33; 1</p>
+                    <p class="button size-1" id="num-2">" 2</p>
+                    <p class="button size-1" id="num-3">3</p>
+                    <p class="button size-1" id="num-4">&#36; 4</p>
+                    <p class="button size-1" id="num-5">% 5</p>
+                    <p class="button size-1" id="num-6">&#94; 6</p>
+                    <p class="button size-1" id="num-7">&amp; 7</p>
+                    <p class="button size-1" id="num-8">* 8</p>
+                    <p class="button size-1" id="num-9">( 9</p>
+                    <p class="button size-1" id="num-0">) 0</p>
+                    <p class="button size-1" id="num-hyphen">_ -</p>
+                    <p class="button size-1" id="num-plus">+ =</p>
+                    <p class="button size-2" id="num-backspace">BS</p>
                 </div>
                 <div class="row">
-                    <p class="button size-2">TAB</p>
-                    <p class="button size-1">Q</p>
-                    <p class="button size-1">W</p>
-                    <p class="button size-1">E</p>
-                    <p class="button size-1">R</p>
-                    <p class="button size-1">T</p>
-                    <p class="button size-1">Y</p>
-                    <p class="button size-1">U</p>
-                    <p class="button size-1">I</p>
-                    <p class="button size-1">O</p>
-                    <p class="button size-1">P</p>
-                    <p class="button size-1">{ [</p>
-                    <p class="button size-1">] }</p>
-                    <p class="button size-1">ENTER</p>
+                    <p class="button size-2" id="letter-tab">TAB</p>
+                    <p class="button size-1" id="letter-q">Q</p>
+                    <p class="button size-1" id="letter-w">W</p>
+                    <p class="button size-1" id="letter-e">E</p>
+                    <p class="button size-1" id="letter-r">R</p>
+                    <p class="button size-1" id="letter-t">T</p>
+                    <p class="button size-1" id="letter-y">Y</p>
+                    <p class="button size-1" id="letter-u">U</p>
+                    <p class="button size-1" id="letter-i">I</p>
+                    <p class="button size-1" id="letter-o">O</p>
+                    <p class="button size-1" id="letter-p">P</p>
+                    <p class="button size-1" id="letter-brackets-open">{ [</p>
+                    <p class="button size-1" id="letter-brackets-close">] }</p>
+                    <p class="button size-1" id="letter-enter">ENTER</p>
                 </div>
                 <div class="row">
-                    <p class="button size-3">CAPS</p>
-                    <p class="button size-1">A</p>
-                    <p class="button size-1">S</p>
-                    <p class="button size-1">D</p>
-                    <p class="button size-1 bumper">F</p>
-                    <p class="button size-1">G</p>
-                    <p class="button size-1">H</p>
-                    <p class="button size-1 bumper">J</p>
-                    <p class="button size-1">K</p>
-                    <p class="button size-1">L</p>
-                    <p class="button size-1">: ;</p>
-                    <p class="button size-1">@ '</p>
-                    <p class="button size-1">~ #</p>                  
-                    <p class="button size-half">&nbsp;</p>                  
+                    <p class="button size-3" id="letter-caps">CAPS</p>
+                    <p class="button size-1" id="letter-a">A</p>
+                    <p class="button size-1" id="letter-s">S</p>
+                    <p class="button size-1" id="letter-d">D</p>
+                    <p class="button size-1 bumper" id="letter-f">F</p>
+                    <p class="button size-1" id="letter-g">G</p>
+                    <p class="button size-1" id="letter-h">H</p>
+                    <p class="button size-1 bumper" id="letter-j">J</p>
+                    <p class="button size-1" id="letter-k">K</p>
+                    <p class="button size-1" id="letter-l">L</p>
+                    <p class="button size-1" id="letter-colon">: ;</p>
+                    <p class="button size-1" id="letter-at">@ '</p>
+                    <p class="button size-1 bug" id="letter-pound">~ #</p>                  
+                    <p class="button size-half bug">&nbsp;</p>             
                 </div>
                 <div class="row">
-                    <p class="button size-1">SHIFT</p>
-                    <p class="button size-1">| \</p>
-                    <p class="button size-1">Z</p>
-                    <p class="button size-1">X</p>
-                    <p class="button size-1">C</p>
-                    <p class="button size-1">V</p>
-                    <p class="button size-1">B</p>
-                    <p class="button size-1">N</p>
-                    <p class="button size-1">M</p>
-                    <p class="button size-1">< ,</p>
-                    <p class="button size-1">> .</p>
-                    <p class="button size-1">? /</p>
-                    <p class="button size-4">SHIFT</p>
+                    <p class="button size-1" id="letter-lshift">SHIFT</p>
+                    <p class="button size-1" id="letter-backslash">| \</p>
+                    <p class="button size-1" id="letter-z">Z</p>
+                    <p class="button size-1" id="letter-x">X</p>
+                    <p class="button size-1" id="letter-c">C</p>
+                    <p class="button size-1" id="letter-v">V</p>
+                    <p class="button size-1" id="letter-b">B</p>
+                    <p class="button size-1" id="letter-n">N</p>
+                    <p class="button size-1" id="letter-m">M</p>
+                    <p class="button size-1" id="letter-comma">< ,</p>
+                    <p class="button size-1" id="letter-dot">> .</p>
+                    <p class="button size-1" id="letter-fwdslash">? /</p>
+                    <p class="button size-4 bug" id="letter-rshift">SHIFT</p>
                 </div>
                 <div class="row">
-                    <p class="button size-2">CTRL</p>
-                    <p class="button size-1">WIN</p>
-                    <p class="button size-1">ALT</p>
-                    <p class="button size-5">SPACE</p>
-                    <p class="button size-1">ALT</p>
-                    <p class="button size-2">FN</p>
-                    <p class="button size-2">CTRL</p>
+                    <p class="button size-2" id="btn-lctrl">CTRL</p>
+                    <p class="button size-1 bug" id="btn-win">WIN</p>
+                    <p class="button size-1 bug" id="btn-lalt">ALT</p>
+                    <p class="button size-5" id="btn-spacebar">SPACE</p>
+                    <p class="button size-1 bug" id="btn-ralt">ALT</p>
+                    <p class="button size-2 bug" id="btn-fn">FN</p>
+                    <p class="button size-2 bug" id="btn-rctrl">CTRL</p>
                 </div>
             </section> <!-- end of .keyboard -->
         </div> <!-- end of .frame -->
+        <script src="jquery.js"></script>
+        <script src="jquery-ui.min.js"></script>
+        <script src="script.js"></script>
     </body>
 </html>
