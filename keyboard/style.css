@@ -1,35 +1,33 @@
 @charset "UTF-8";
 
-* {
-    box-sizing: border-box;
-    text-align: center;
-    }
-
+* { box-sizing: border-box; }
+    
 body {
     background: #E8E8E8;
     font-size: 75%;
     }
 
 .frame { /* general container */
-    padding: 0 5%; /* 5% & 5% space on each side */
+    padding: 0 5%; /* 5%-5% white-space on each side */
     }
 
 .keyboard { /* keyboard panel */
-    margin: auto; /* aligns to center of the window */
+    margin: auto; /* aligns to the center of the window */
     padding: 2%; /* adds inner space from the edges of keyboard panel */
 
     background: linear-gradient(to bottom, #BAB6B6, #D4D4D4, #EEE);
-    box-shadow: 0 5px 2px 3px #343232, 0 0 15px 5px #BAB6B6 inset;
+    box-shadow:
+        0 5px 2px 3px #343232, /* outer shadow */
+        0 0 15px 5px #BAB6B6 inset; /* inner shadow */
     border-radius: 15px;
+    text-align: center;
     }
 
-.row { /* rows of the keyboard */
-    /*border: 1px solid pink; for debug */
-    }
+.row { /* rows of the keyboard */ }
 
 .button { /* individual buttons of the keyboard */
     display: inline-block; /* display the buttons placed next to each other in a row */
-    margin: .2% .1%; /* adds space between the buttons */
+    margin: .25% .1%; /* adds space between the buttons */
     padding: 1.5% 0; /* gives the buttons height */
     
     background: #EEE;
@@ -37,39 +35,63 @@ body {
     border-left: 1px solid #E2E0E0;
     border-top: 1px solid #E2E0E0;
     border-radius: 5px;
-    box-shadow: 0 2px 1px 1px #343232, 0 0 6px #898383 inset;
+    box-shadow:
+        0 2px 1px 1px #343232, /* outer shadow */
+        0 0 6px #898383 inset; /* inner shadow */
 
     color: #383838;    
     font-family: monospace;
     font-weight: bolder;
-    text-shadow: 0 1px 0 white, 0 0 2px grey;
+    text-shadow:
+        0 1px 0 white,
+        0 0 2px grey;
 
-    transition: all 50ms;
+    transition: all 5ms;
     }
 
-.button:hover {
+.button:hover,
+.button-pressed { /* applied with jquery */
     background: #E1E1E1;
-    border-bottom: 1px solid black;
-    border-left: 1px solid black;
+    border: 1px solid black; /* left & bottom */
     border-right: 1px solid #aaa;
     border-top: 1px solid #aaa;
-    box-shadow: 0 1px 1px 0 #343232, 0 0 6px grey inset;
+    box-shadow:
+        0 1px 1px 0 #343232, /* outer shadow */
+        0 0 6px grey inset; /*  inner shadow */
 
     color: transparent;
-    text-shadow: 1px 1px 0 #343232, 1px 1px 2px grey;
+    text-shadow:
+        1px 1px 0 #343232,
+        1px 1px 2px grey;
 
+    transform: translateY(2px); /* slight downward motion for a visually more convincing pressed-state */
     transition: all 25ms;
-    transform: translateY(2px) /* slight downward motion for a visually more convincing pressed-state */
     }
 
 /* button sizes -- relative to .row */
-.size-half { width: 2.5%; }
-.size-1 { width: 5%; }
-.size-2 { width: 7.5%; }
-.size-3 { width: 10%; }
-.size-4 { width: 12.5%; }
-.size-5 { width: 37.5%; }
+.size-half  { width: 2.5%; }
+.size-1     { width: 5%; }
+.size-2     { width: 7.5%; }
+.size-3     { width: 10%; }
+.size-4     { width: 12.5%; }
+.size-5     { width: 37.5%; }
 
 .bumper { /* applies to buttons F + J for touch typing */
     text-decoration: underline;
+    }
+
+@media all and (max-width: 700px) {
+    .button {
+        font-size: 70%;
+        margin: .5% .1%; /* additional room between the rows */
+        padding: 1% 0; /* decrease the height of the buttons */
+        }
+    }
+
+@media all and (max-width: 600px) {
+    .button { font-size: 60%; } 
+    }
+
+.bug { /* subtly highlights buttons that don't work with keyboard key binding by applying opacity */
+    opacity: .35;
     }
