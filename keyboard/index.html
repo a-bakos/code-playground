@@ -4,12 +4,24 @@
     </head>
     <body>
         <div class="frame">
-            <section class="keyboard">
+            <section class="display object-design">
+                <textarea
+                    rows="6"
+                    autofocus="autofocus"
+                    class="input"
+                    placeholder="Type here...">
+                </textarea>
+            <h1 class="font-decor">OKOS</h1>
+            <h2 class="font-decor">Online Keyboard On Screen</h2>
+            </section>
+            
+
+            <section class="keyboard object-design">
                 <div class="row">
                     <p class="button size-1 bug" id="num-firstkey">`</p>
                     <p class="button size-1" id="num-1">&#33; 1</p>
                     <p class="button size-1" id="num-2">" 2</p>
-                    <p class="button size-1" id="num-3">3</p>
+                    <p class="button size-1" id="num-3">&pound; 3</p>
                     <p class="button size-1" id="num-4">&#36; 4</p>
                     <p class="button size-1" id="num-5">% 5</p>
                     <p class="button size-1" id="num-6">&#94; 6</p>
@@ -19,10 +31,10 @@
                     <p class="button size-1" id="num-0">) 0</p>
                     <p class="button size-1" id="num-hyphen">_ -</p>
                     <p class="button size-1" id="num-plus">+ =</p>
-                    <p class="button size-2" id="num-backspace">BS</p>
+                    <p class="button size-2" id="num-backspace">&#8592; BS</p>
                 </div>
                 <div class="row">
-                    <p class="button size-2" id="letter-tab">TAB</p>
+                    <p class="button size-2" id="letter-tab">&#8633; TAB</p>
                     <p class="button size-1" id="letter-q">Q</p>
                     <p class="button size-1" id="letter-w">W</p>
                     <p class="button size-1" id="letter-e">E</p>
@@ -35,7 +47,7 @@
                     <p class="button size-1" id="letter-p">P</p>
                     <p class="button size-1" id="letter-brackets-open">{ [</p>
                     <p class="button size-1" id="letter-brackets-close">] }</p>
-                    <p class="button size-1" id="letter-enter">ENTER</p>
+                    <p class="button size-1" id="letter-enter">&#8629;</p>
                 </div>
                 <div class="row">
                     <p class="button size-3" id="letter-caps">CAPS</p>
@@ -54,7 +66,7 @@
                     <p class="button size-half bug">&nbsp;</p>             
                 </div>
                 <div class="row">
-                    <p class="button size-1" id="letter-lshift">SHIFT</p>
+                    <p class="button size-1" id="letter-lshift">&#8679; SHIFT</p>
                     <p class="button size-1" id="letter-backslash">| \</p>
                     <p class="button size-1" id="letter-z">Z</p>
                     <p class="button size-1" id="letter-x">X</p>
@@ -80,7 +92,6 @@
             </section> <!-- end of .keyboard -->
         </div> <!-- end of .frame -->
         <script src="jquery.js"></script>
-        <script src="jquery-ui.min.js"></script>
-        <script src="script.js"></script>
+        <script src="app.js"></script>
     </body>
 </html>
