@@ -1,6 +1,6 @@
 #Screen / Browser keyboard 
 
-###created by using HTML and CSS codes.
+unfinished. work in progress.
 
 Just for fun.
 
