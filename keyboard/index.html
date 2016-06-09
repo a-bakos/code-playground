@@ -1,9 +1,16 @@
 <!doctype html>
     <head>
+        <meta charset="UTF-8" />
+        <title>OKOS by abakos</title>
+		<meta name="author" content="Attila Bakos">
+		<meta name="description" content="OKOS - Online Keyboard On Screen">
+        <link rel="shortcut icon" href="">
         <link href="style.css" rel="stylesheet" type="text/css" />
     </head>
     <body>
         <div class="frame">
+            
+            <!-- display module -->
             <section class="display object-design">
                 <textarea
                     rows="6"
@@ -11,12 +18,12 @@
                     class="input"
                     placeholder="Type here...">
                 </textarea>
-            <h1 class="font-decor">OKOS</h1>
-            <h2 class="font-decor">Online Keyboard On Screen</h2>
-            </section>
+            <h1 class="font-decor monospace bolderfont">OKOS</h1>
+            <h2 class="font-decor monospace">Online Keyboard On Screen</h2>
+            </section> <!-- end of .display -->
             
-
-            <section class="keyboard object-design">
+            <!-- keyboard module -->
+            <section class="keyboard object-design monospace bolderfont">
                 <div class="row">
                     <p class="button size-1 bug" id="num-firstkey">`</p>
                     <p class="button size-1" id="num-1">&#33; 1</p>
@@ -90,6 +97,7 @@
                     <p class="button size-2 bug" id="btn-rctrl">CTRL</p>
                 </div>
             </section> <!-- end of .keyboard -->
+
         </div> <!-- end of .frame -->
         <script src="jquery.js"></script>
         <script src="app.js"></script>
