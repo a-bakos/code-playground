@@ -1,7 +1,15 @@
 @charset "UTF-8";
 
+/*
+Hello, this is the stylesheet of OKOS.
+OKOS stands for Online Keyboard On Screen.
+It's a toy project.
+Attila Bakos, Plymouth, UK 2016.
+http://abakos.info
+*/
+
 * { box-sizing: border-box; }
-    
+
 body {
     background: #E8E8E8;
     font-size: 75%;
@@ -11,9 +19,7 @@ body {
     padding: 0 5%; /* 5%-5% white-space on each side */
     }
 
-/* keyboard section */
-
-/* superclass */
+/* superclass: */
 .object-design { /* applies to .keyboard & .text-field */
     background: linear-gradient(to bottom, #BAB6B6, #D4D4D4, #EEE);
     box-shadow:
@@ -23,6 +29,12 @@ body {
     text-align: center;
     }
 
+/* superclass: */
+.bolderfont { font-weight: bolder; }
+.monospace { font-family: monospace; }
+
+/* keyboard section */
+
 .keyboard { /* keyboard panel */
     margin: 2% auto; /* aligns to the center of the window */
     padding: 2%; /* adds inner space from the edges of keyboard panel */
@@ -31,7 +43,7 @@ body {
 .row { /* rows of the keyboard */ }
 
 .button { /* individual buttons of the keyboard */
-    display: inline-block; /* display the buttons placed next to each other in a row */
+    display: inline-block; /* displays the buttons placed next to each other in a row */
     margin: .25% .1%; /* adds space between the buttons */
     padding: 1.5% 0; /* gives the buttons height */
     
@@ -44,16 +56,14 @@ body {
         0 2px 1px 1px #343232, /* outer shadow */
         0 0 6px #898383 inset; /* inner shadow */
 
-    color: #383838;    
-    font-family: monospace;
-    font-weight: bolder;
+    color: #383838;
     text-shadow:
         0 1px 0 white,
         0 0 2px grey;
     }
 
 .button:hover,
-.button-pressed { /* applied with jquery */
+.button-pressed { /* this class is applied with jquery */
     background: #E1E1E1;
     border: 1px solid black; /* left & bottom */
     border-right: 1px solid #aaa;
@@ -115,16 +125,14 @@ body {
 
 /* OKOS branding */
 
-/* superclass */
+/* superclass: */
 .font-decor { /* applies to h1 & h2 */
-    font-family: monospace;
     line-height: 0;
     letter-spacing: 1px;
     }
 
 h1 { /* OKOS */
     color: #BBB;
-    font-weight: bolder;
     font-size: 300%;
     text-shadow: 
         1px 1px 0 grey,
@@ -145,7 +153,7 @@ h2 { /* Online Keyboard On Screen */
     .button {
         font-size: 70%;
         margin: .5% .1%; /* additional room between the rows */
-        padding: 1% 0; /* decrease the height of the buttons */
+        padding: 1% 0; /* decreases the height of the buttons */
         }
     }
 
