@@ -1,11 +1,12 @@
 @charset "UTF-8";
 
 /*
-Hello, this is the stylesheet of OKOS.
-OKOS stands for Online Keyboard On Screen.
-It's a toy project.
-Attila Bakos, Plymouth, UK 2016.
-http://abakos.info
+    Hello, this is the stylesheet of OKOS.
+    OKOS stands for Online Keyboard On Screen.
+
+    OKOS is a toy project.
+    Attila Bakos, Plymouth, UK 2016.
+    http://abakos.info
 */
 
 * { box-sizing: border-box; }
@@ -80,7 +81,7 @@ body {
     transform: translateY(2px); /* slight downward motion for a visually more convincing pressed-state */
     }
 
-.button:hover { transition: all 5ms; }
+.button:hover { transition: all 5ms; } /* for mouse pointing */
 
 /* button sizes -- relative to .row */
 .size-half  { width: 2.5%; }
@@ -106,16 +107,18 @@ body {
     margin: 2%;
     margin-bottom: .25%;
     padding: 1%;
+
     background: linear-gradient(to bottom, #222, #111, #222);
-    border: 2px solid grey;
-    border-radius: 5px;
+    border-top: 2px solid #606060;
+    border-bottom: 2px solid #505050;
+    border-left: 2px solid #707070;
+    border-right: 2px solid #808080;
+    border-radius: 4px;
+    box-shadow: 0 0 6px 2px grey;
     outline: none;
     font-size: 200%;
     color: greenyellow;
     text-shadow: 1px 1px 1px black;
-
-    /* needs more elaboration */
-    box-shadow: 0 1px 3px 0 grey inset;
     }
 
 ::selection {
