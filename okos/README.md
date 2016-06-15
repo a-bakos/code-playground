@@ -1,4 +1,4 @@
-#OKOS
+#OKOS by abakos
 
 **OKOS** is a toy project.
 OKOS stands for **Online Keyboard On Screen**.
