@@ -12,15 +12,14 @@
             
             <!-- display module -->
             <section class="display object-design">
-                <textarea
-                    rows="6"
-                    autofocus="autofocus"
-                    class="input"
-                    placeholder="Type here...">
-                </textarea>
-            <h1 class="font-decor monospace bolderfont">OKOS</h1>
-            <h2 class="font-decor monospace">Online Keyboard On Screen</h2>
+                <div class="display-container">
+                    <textarea name="input-area" rows="6" autofocus="autofocus" class="input" placeholder="Type here..." maxlength="9999"></textarea>
+                    <p class="text-info input monospace character-display"><span>0</span></p>
+                </div>
+                <h1 class="font-decor monospace bolderfont">OKOS</h1>
+                <h2 class="font-decor monospace">Online Keyboard On Screen</h2>
             </section> <!-- end of .display -->
+            
             
             <!-- keyboard module -->
             <section class="keyboard object-design monospace bolderfont">
@@ -73,7 +72,7 @@
                     <p class="button size-half bug">&nbsp;</p>             
                 </div>
                 <div class="row">
-                    <p class="button size-1" id="letter-lshift">&#8679; SHIFT</p>
+                    <p class="button size-1" id="letter-lshift">&#8679;</p>
                     <p class="button size-1" id="letter-backslash">| \</p>
                     <p class="button size-1" id="letter-z">Z</p>
                     <p class="button size-1" id="letter-x">X</p>

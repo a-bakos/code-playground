@@ -7,6 +7,9 @@ http://abakos.info
 */
 
 $(document).ready(function () {
+    
+
+    
     $(document).keydown(function (key) {
         switch (parseInt(key.which)) {
             // First row -- numbers, backspace
@@ -240,4 +243,10 @@ $(document).ready(function () {
             break;
         }
     });
+    
+    // Character counter in display module
+	$('textarea[name="input-area"]').keyup(function(){
+		var numCharacters = $(this).val().length;
+		$('.text-info span').html(numCharacters);
+	});
 });

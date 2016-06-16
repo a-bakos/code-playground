@@ -98,15 +98,17 @@ body {
 /* Text-field || input - display area */
 
 .display {
+    padding-bottom: 2.5%; /* space below OKOS branding */
+    }
+
+.display-container {
+    width: 70%;
     margin: auto; /* aligns to the center */
-    padding-bottom: 2%;
+    padding: 1%;
     }
 
 .input {
-    width: 70%;
-    margin: 2%;
-    margin-bottom: .25%;
-    padding: 1%;
+    width: 100%;
 
     background: linear-gradient(to bottom, #222, #111, #222);
     border-top: 2px solid #606060;
@@ -124,6 +126,17 @@ body {
 ::selection {
     color: #111;
     background: greenyellow;
+    }
+
+::-moz-selection {
+    color: #111;
+    background: greenyellow;
+    }
+
+.character-display {
+    width: 25%;
+    display: inline-block;
+    margin: 0;
     }
 
 /* OKOS branding */
@@ -167,4 +180,21 @@ h2 { /* Online Keyboard On Screen */
 /* testing */
 .bug { /* subtly highlights buttons that don't work with keyboard key binding by applying opacity */
     opacity: .35;
+    }
+
+/* scroll bar styling */
+::-webkit-scrollbar {
+    width: 10px;
+    }
+ 
+::-webkit-scrollbar-track {
+    background: transparent;
+    border-left: 1px solid #606060;
+    }
+ 
+::-webkit-scrollbar-thumb {
+    width: 10px;
+    background: greenyellow;
+    border-top-right-radius: 2px;
+    box-shadow: 0 0 2px black inset;
     }
