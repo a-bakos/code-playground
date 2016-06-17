@@ -16,6 +16,6 @@ When the idea conceived first, the main purpose was to create detailed and credi
 
 Maybe, hopefully OKOS will come handy for someone at some point.
 
-Just for fun.
+Experiment, fun.
 
 URL: http://abakos.info/okos/
