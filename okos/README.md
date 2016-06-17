@@ -1,7 +1,5 @@
 #OKOS by abakos
 
-_(unfinished / work-in-progress)_
-
 **OKOS** is a toy project.
 OKOS stands for **Online Keyboard On Screen**.
 Also, it means *smart* in Hungarian.
