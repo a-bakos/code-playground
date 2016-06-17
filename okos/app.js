@@ -1,11 +1,4 @@
-/*
-Hello, this is the jQuery file of OKOS.
-OKOS stands for Online Keyboard On Screen.
-
-OKOS is a toy/experiment project.
-Attila Bakos, Plymouth, UK 2016.
-http://abakos.info/play
-*/
+// OKOS - jQuery
 
 $(document).ready(function () {
     $(document).keydown(function (key) {
