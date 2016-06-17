@@ -18,4 +18,4 @@ Maybe, hopefully OKOS will come handy for someone at some point.
 
 Just for fun.
 
-URL: http://abakos.info/play/
+URL: http://abakos.info/okos/
