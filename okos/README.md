@@ -9,6 +9,7 @@ Although there are some limitations:
 - OKOS does not support mouse clicks just yet, event though it has working hover effect built-in
 - It was designed with a UK keyboard in mind, so the arrangement of the keys can obviously be slightly vary with different keyboards
 - Some buttons that are not hooked up with jQuery shown as opaque
+- For the moment being, it is not well-supported on mobile devices
 
 When the idea conceived first, the main purpose was to create detailed and credible keyboard buttons only by CSS and to mimic a real keyboard and its key movements. It was intended to be a realistic digital representation of its appropriate physical counterpart designed only with codes, therefore no external graphic elements have been used throughout the experiment.
 
