@@ -17,6 +17,23 @@
 body {
     background: $bg;
     font-size: 75%;
+
+    .credits { /* abakos.info | github | 2016 */
+        font-size: 1.75em;
+        color: $btn;
+        text-shadow: 1px 1px 1px white;
+
+        a {
+            padding: .5%;
+            text-decoration: none;
+            color: inherit;
+            transition: .35s;
+            }
+
+        :hover {
+            background: $digicolor;
+            }
+        }
     }
 
 .frame { /* general container */
@@ -30,7 +47,6 @@ body {
             0 5px 2px 3px #343232, /* outer shadow */
             0 0 15px 5px #BAB6B6 inset; /* inner shadow */
         border-radius: 15px;
-        text-align: center;
         }
 
     .font-decor { /* applies to h1 & h2 */
@@ -38,6 +54,7 @@ body {
         letter-spacing: 1px;
         }
 
+    .centertext { text-align: center; }
     .bolderfont { font-weight: bolder; }
     .monospace { font-family: monospace; }
     .zeromargin { margin: 0; } /* applies to .character-display & h2 */
@@ -167,7 +184,6 @@ h1 { /* OKOS */
         1px 1px 0 grey,
         2px 2px 0 #CCC,
         2px 0 1px white;
-    text-align: center;
     }
 
 h2 { /* Online Keyboard On Screen */
