@@ -130,10 +130,10 @@ dialog:not([open]) { /* this hides the modals when they have no 'open' attribute
 
     padding: 2%;
     margin: 1%;
-
-	font-size: 1em;
-	line-height: 1em;
-	font-weight: bold;
+    
+    font-size: 1em;
+    line-height: 1em;
+    font-weight: bold;
 
     background: #EEE;
     border: 1px solid #BBB;
@@ -145,9 +145,9 @@ dialog:not([open]) { /* this hides the modals when they have no 'open' attribute
 	}
 
 .diamodal-btn:hover {
-	cursor: pointer;
-	background: linear-gradient(gray, white);
-	text-shadow: 1px 0 0 white;
+    cursor: pointer;
+    background: linear-gradient(gray, white);
+    text-shadow: 1px 0 0 white;
 
     border: 1px solid black; /* left & bottom */
     border-right: 1px solid #aaa;
