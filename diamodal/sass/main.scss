@@ -1,0 +1,158 @@
+// DiaModal main Sass file
+
+@charset "UTF-8";
+@import "reset";
+
+/* 
+    ----------------------------------
+    DiaModal display unit
+
+    DiaModal is an experiment project.
+    Attila Bakos, Plymouth, UK 2016.
+    http://abakos.info/diamodal
+    ----------------------------------
+*/
+
+* { box-sizing: border-box; }
+
+body {
+    font-size: 100%;
+    font-family: monospace;
+
+    p { padding: 2%; }
+    }
+
+h1 {
+    font-size: 2em;
+    font-weight: bolder;
+    }
+
+.frame { 
+    width: 90%;
+    margin: 2% auto;
+    text-align: center;
+    }
+
+main { transition: all .5s; } /* return to ground state */
+
+/* modal window styling */
+
+.bgdown { /* this is how the background is treated while the item is being displayed */
+	-webkit-filter: blur(3px) contrast(.8) brightness(.8);
+			filter: blur(3px) contrast(.8) brightness(.8);
+	}
+
+dialog { /* modal container */
+	position: fixed;
+	top: 10%; /* some room from the top */
+	width: 100%; /* if not set to 100% mozilla cannot center the modal horizontally */
+	margin: auto;
+	padding: 0;
+	z-index: 1;
+
+	background: none; /* transparent background here so the effect can be seen on main background */
+	border: none; /* has to be specified as none // it gets border by default */
+    color: grey; /* text inside modal window (<dialog> is an isolated place, colors are not inherited by default) */
+	text-align: center;
+
+    /* effect when opening the modal */
+	-webkit-animation: modal-fx .5s ease-in;
+			animation: modal-fx .5s ease-in;
+
+    .dm-ititle { /* item title */
+        margin-bottom: 2%;
+        font-size: 2em;
+        }
+    
+    .dm-icaption { /* item caption */
+        margin-top: 2%;
+        font-size: 1em;
+        font-style: italic;
+        }
+	}
+
+    /* effect when opening the modal */
+    @-webkit-keyframes modal-fx {
+        0% {
+            opacity: 0;
+            -webkit-transform: scale(0);
+                -ms-transform: scale(0);
+                    transform: scale(0);
+            }
+        100% {
+            opacity: 1;
+            -webkit-transform: scale(1);
+                -ms-transform: scale(1);
+                    transform: scale(1);
+            }
+        }
+
+    @keyframes modal-fx {
+        0% {
+            opacity: 0;
+            -webkit-transform: scale(0);
+                -ms-transform: scale(0);
+                    transform: scale(0);
+            }
+        100% {
+            opacity: 1;
+            -webkit-transform: scale(1);
+                -ms-transform: scale(1);
+                    transform: scale(1);
+            }
+        }
+
+.dialog-inner {
+	width: 50%; /* the actual modal window size on display: mozilla wants this value to be specified */
+	margin: auto; /* centers the element */
+	padding: 1%;
+
+	background: white;
+	border: 1px solid gray;
+	border-radius: 15px;
+	box-shadow:
+		0 .2em .5em rgba(0,0,0,.5),
+		0 0 0 100vmax rgba(0,0,0,.2), /* this makes the background look shaded */
+		0 0 10px gray inset;
+
+    > img {
+        max-width: 50%;
+        box-shadow: 0 2px 3px black;
+        }
+    }
+
+dialog:not([open]) { /* this hides the modals when they have no 'open' attribute */
+	display: none;
+	}
+
+.diamodal-btn { /* the button that triggers the modal to come to life */
+    /*display: inline-block;*/
+
+    padding: 2%;
+    margin: 1%;
+
+	font-size: 1em;
+	line-height: 1em;
+	font-weight: bold;
+
+    background: #EEE;
+    border: 1px solid #BBB;
+    border-left: 1px solid #E2E0E0;
+    border-top: 1px solid #E2E0E0;
+    box-shadow:
+        0 2px 1px 1px #343232,
+        0 0 6px #898383 inset;
+	}
+
+.diamodal-btn:hover {
+	cursor: pointer;
+	background: linear-gradient(gray, white);
+	text-shadow: 1px 0 0 white;
+
+    border: 1px solid black; /* left & bottom */
+    border-right: 1px solid #aaa;
+    border-top: 1px solid #aaa;
+    box-shadow:
+        0 1px 1px 0 #343232,
+        0 0 6px grey inset;
+	}
