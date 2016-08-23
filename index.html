@@ -1,0 +1,107 @@
+<!doctype html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>OKOS by abakos</title>
+        <meta name="author" content="Attila Bakos">
+        <meta name="description" content="OKOS - Online Keyboard On Screen">
+        <link rel="shortcut icon" href="favicon.png">
+        <link href="style.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body class="centertext">
+        <div class="frame">
+
+            <!-- display module -->
+            <section class="display object-design">
+                <div class="display-container">
+                    <textarea name="input-area" rows="6" autofocus="autofocus" class="input" placeholder="Type here..." maxlength="9999"></textarea>
+                    <p class="text-info input monospace character-display zeromargin"><span>0</span></p>
+                </div>
+                <h1 class="font-decor monospace bolderfont">OKOS</h1>
+                <h2 class="font-decor monospace zeromargin">Online Keyboard On Screen</h2>
+            </section> <!-- end of .display -->
+
+            <!-- keyboard module -->
+            <section class="keyboard object-design monospace bolderfont">
+                <div class="row">
+                    <p class="button size-1 bug" id="num-firstkey">`</p>
+                    <p class="button size-1" id="num-1">&#33; 1</p>
+                    <p class="button size-1" id="num-2">" 2</p>
+                    <p class="button size-1" id="num-3">&pound; 3</p>
+                    <p class="button size-1" id="num-4">&#36; 4</p>
+                    <p class="button size-1" id="num-5">% 5</p>
+                    <p class="button size-1" id="num-6">&#94; 6</p>
+                    <p class="button size-1" id="num-7">&amp; 7</p>
+                    <p class="button size-1" id="num-8">* 8</p>
+                    <p class="button size-1" id="num-9">( 9</p>
+                    <p class="button size-1" id="num-0">) 0</p>
+                    <p class="button size-1" id="num-hyphen">_ -</p>
+                    <p class="button size-1" id="num-plus">+ =</p>
+                    <p class="button size-2" id="num-backspace">&#8592; BS</p>
+                </div>
+                <div class="row">
+                    <p class="button size-2" id="letter-tab">&#8633; TAB</p>
+                    <p class="button size-1" id="letter-q">Q</p>
+                    <p class="button size-1" id="letter-w">W</p>
+                    <p class="button size-1" id="letter-e">E</p>
+                    <p class="button size-1" id="letter-r">R</p>
+                    <p class="button size-1" id="letter-t">T</p>
+                    <p class="button size-1" id="letter-y">Y</p>
+                    <p class="button size-1" id="letter-u">U</p>
+                    <p class="button size-1" id="letter-i">I</p>
+                    <p class="button size-1" id="letter-o">O</p>
+                    <p class="button size-1" id="letter-p">P</p>
+                    <p class="button size-1" id="letter-brackets-open">{ [</p>
+                    <p class="button size-1" id="letter-brackets-close">] }</p>
+                    <p class="button size-1" id="letter-enter">&#8629;</p>
+                </div>
+                <div class="row">
+                    <p class="button size-3" id="letter-caps">CAPS</p>
+                    <p class="button size-1" id="letter-a">A</p>
+                    <p class="button size-1" id="letter-s">S</p>
+                    <p class="button size-1" id="letter-d">D</p>
+                    <p class="button size-1 bumper" id="letter-f">F</p>
+                    <p class="button size-1" id="letter-g">G</p>
+                    <p class="button size-1" id="letter-h">H</p>
+                    <p class="button size-1 bumper" id="letter-j">J</p>
+                    <p class="button size-1" id="letter-k">K</p>
+                    <p class="button size-1" id="letter-l">L</p>
+                    <p class="button size-1" id="letter-colon">: ;</p>
+                    <p class="button size-1" id="letter-at">@ '</p>
+                    <p class="button size-1 bug" id="letter-pound">~ #</p>                  
+                    <p class="button size-half bug">&nbsp;</p>             
+                </div>
+                <div class="row">
+                    <p class="button size-1" id="letter-lshift">&#8679;</p>
+                    <p class="button size-1" id="letter-backslash">| \</p>
+                    <p class="button size-1" id="letter-z">Z</p>
+                    <p class="button size-1" id="letter-x">X</p>
+                    <p class="button size-1" id="letter-c">C</p>
+                    <p class="button size-1" id="letter-v">V</p>
+                    <p class="button size-1" id="letter-b">B</p>
+                    <p class="button size-1" id="letter-n">N</p>
+                    <p class="button size-1" id="letter-m">M</p>
+                    <p class="button size-1" id="letter-comma">< ,</p>
+                    <p class="button size-1" id="letter-dot">> .</p>
+                    <p class="button size-1" id="letter-fwdslash">? /</p>
+                    <p class="button size-4 bug" id="letter-rshift">SHIFT</p>
+                </div>
+                <div class="row">
+                    <p class="button size-2" id="btn-lctrl">CTRL</p>
+                    <p class="button size-1 bug" id="btn-win">WIN</p>
+                    <p class="button size-1 bug" id="btn-lalt">ALT</p>
+                    <p class="button size-5" id="btn-spacebar">SPACE</p>
+                    <p class="button size-1 bug" id="btn-ralt">ALT</p>
+                    <p class="button size-2 bug" id="btn-fn">FN</p>
+                    <p class="button size-2 bug" id="btn-rctrl">CTRL</p>
+                </div>
+            </section> <!-- end of .keyboard -->
+
+            <p class="credits monospace bolderfont">
+                <a href="http://abakos.info" target="_blank">abakos.info</a> | <a href="https://github.com/a-bakos/code-playground/tree/master/okos" target="_blank">GitHub</a> | 2016 Plymouth UK
+            </p>
+
+        </div> <!-- end of .frame -->
+        <script src="jquery.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>
