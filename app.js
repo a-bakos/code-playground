@@ -1,6 +1,164 @@
 // OKOS - jQuery
 
-$(document).ready(function () {
+    $(document).ready(function () {
+        
+        // First row click input
+        $('#num-firstkey').mousedown(function () {
+            $('.click-input').append("`");
+        });
+        $('#num-1').mousedown(function () {
+            $('.click-input').append("1");
+        });
+        $('#num-2').mousedown(function () {
+            $('.click-input').append("2");
+        });
+        $('#num-3').mousedown(function () {
+            $('.click-input').append("3");
+        });
+        $('#num-4').mousedown(function () {
+            $('.click-input').append("4");
+        });
+        $('#num-5').mousedown(function () {
+            $('.click-input').append("5");
+        });
+        $('#num-6').mousedown(function () {
+            $('.click-input').append("6");
+        });
+        $('#num-7').mousedown(function () {
+            $('.click-input').append("7");
+        });
+        $('#num-8').mousedown(function () {
+            $('.click-input').append("8");
+        });
+        $('#num-9').mousedown(function () {
+            $('.click-input').append("9");
+        });
+        $('#num-0').mousedown(function () {
+            $('.click-input').append("0");
+        });
+        $('#num-hyphen').mousedown(function () {
+            $('.click-input').append("-");
+        });
+        $('#num-plus').mousedown(function () {
+            $('.click-input').append("+");
+        });
+
+        // Second row click input
+        $('#letter-q').mousedown(function () {
+            $('.click-input').append("q");
+        });
+        $('#letter-w').mousedown(function () {
+            $('.click-input').append("w");
+        });
+        $('#letter-e').mousedown(function () {
+            $('.click-input').append("e");
+        });
+        $('#letter-r').mousedown(function () {
+            $('.click-input').append("r");
+        });
+        $('#letter-t').mousedown(function () {
+            $('.click-input').append("t");
+        });
+        $('#letter-y').mousedown(function () {
+            $('.click-input').append("y");
+        });
+        $('#letter-u').mousedown(function () {
+            $('.click-input').append("u");
+        });
+        $('#letter-i').mousedown(function () {
+            $('.click-input').append("i");
+        });
+        $('#letter-o').mousedown(function () {
+            $('.click-input').append("o");
+        });
+        $('#letter-p').mousedown(function () {
+            $('.click-input').append("p");
+        });
+        $('#letter-brackets-open').mousedown(function () {
+            $('.click-input').append("[");
+        });
+        $('#letter-brackets-close').mousedown(function () {
+            $('.click-input').append("]");
+        });
+
+        // Third row click input
+        $('#letter-a').mousedown(function () {
+            $('.click-input').append("a");
+        });
+        $('#letter-s').mousedown(function () {
+            $('.click-input').append("s");
+        });
+        $('#letter-d').mousedown(function () {
+            $('.click-input').append("d");
+        });
+        $('#letter-f').mousedown(function () {
+            $('.click-input').append("f");
+        });
+        $('#letter-g').mousedown(function () {
+            $('.click-input').append("g");
+        });
+        $('#letter-h').mousedown(function () {
+            $('.click-input').append("h");
+        });
+        $('#letter-j').mousedown(function () {
+            $('.click-input').append("j");
+        });
+        $('#letter-k').mousedown(function () {
+            $('.click-input').append("k");
+        });
+        $('#letter-l').mousedown(function () {
+            $('.click-input').append("l");
+        });
+        $('#letter-colon').mousedown(function () {
+            $('.click-input').append(";");
+        });
+        $('#letter-at').mousedown(function () {
+            $('.click-input').append("'");
+        });
+        $('#letter-pound').mousedown(function () {
+            $('.click-input').append("#");
+        });
+
+        // Fourth row click input
+        $('#letter-backslash').mousedown(function () {
+            $('.click-input').append("\\");
+        });
+        $('#letter-z').mousedown(function () {
+            $('.click-input').append("z");
+        });
+        $('#letter-x').mousedown(function () {
+            $('.click-input').append("x");
+        });
+        $('#letter-c').mousedown(function () {
+            $('.click-input').append("c");
+        });
+        $('#letter-v').mousedown(function () {
+            $('.click-input').append("v");
+        });
+        $('#letter-b').mousedown(function () {
+            $('.click-input').append("b");
+        });
+        $('#letter-n').mousedown(function () {
+            $('.click-input').append("n");
+        });
+        $('#letter-m').mousedown(function () {
+            $('.click-input').append("m");
+        });
+        $('#letter-comma').mousedown(function () {
+            $('.click-input').append(",");
+        });
+        $('#letter-dot').mousedown(function () {
+            $('.click-input').append(".");
+        });
+        $('#letter-fwdslash').mousedown(function () {
+            $('.click-input').append("/");
+        });
+
+        // Fifth row click input
+        $('#btn-spacebar').mousedown(function () {
+            $('.click-input').append(" ");
+        });
+
     $(document).keydown(function (key) {
         switch (parseInt(key.which)) {
             // First row -- numbers, backspace
@@ -30,7 +188,7 @@ $(document).ready(function () {
             break;
             case 8: $('#num-backspace').addClass('button-pressed');
             break;
-                
+
             // Letters in order starting from TAB, going left to right direction
             case 9: $('#letter-tab').addClass('button-pressed');
             break;
@@ -85,7 +243,7 @@ $(document).ready(function () {
             break;
             case 192: $('#letter-at').addClass('button-pressed');
             break;
-            
+
             case 16: $('#letter-lshift').addClass('button-pressed');
             break;
             case 220: $('#letter-backslash').addClass('button-pressed');
@@ -110,7 +268,7 @@ $(document).ready(function () {
             break;
             case 191: $('#letter-fwdslash').addClass('button-pressed');
             break;
-                
+
             case 17: $('#btn-lctrl').addClass('button-pressed');
             break;
             case 32: $('#btn-spacebar').addClass('button-pressed');
@@ -147,7 +305,7 @@ $(document).ready(function () {
             break;
             case 8: $('#num-backspace').removeClass('button-pressed');
             break;
-            
+
             // Letters in order starting from TAB, going left to right direction
             case 9: $('#letter-tab').removeClass('button-pressed');
             break;
@@ -202,7 +360,7 @@ $(document).ready(function () {
             break;
             case 192: $('#letter-at').removeClass('button-pressed');
             break;
-                
+
             case 16: $('#letter-lshift').removeClass('button-pressed');
             break;
             case 220: $('#letter-backslash').removeClass('button-pressed');
@@ -227,7 +385,7 @@ $(document).ready(function () {
             break;
             case 191: $('#letter-fwdslash').removeClass('button-pressed');
             break;
-                
+
             case 17: $('#btn-lctrl').removeClass('button-pressed');
             break;
             case 32: $('#btn-spacebar').removeClass('button-pressed');
